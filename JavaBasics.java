@@ -293,16 +293,45 @@
 
 // Switch Statement
 
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     int number = 2;
+
+//     switch(number){
+//       case 1: System.out.println("Samosa");
+//       break;
+//       case 2: System.out.println("burger");
+//       break;
+//       case 3: System.out.println("mango shake");
+//       break;
+//       default: System.out.println("We wake up");
+
+//     }
+//   }
+// }
+
+// Calculator using switch
+
+import java.util.*;
+
 public class JavaBasics{
   public static void main(String args[]){
-    int number = 2;
+    Scanner sc = new Scanner(System.in);
 
-    switch(number){
-      case 1: System.out.println("Samosa");
-      case 1: System.out.println("burger");
-      case 1: System.out.println("mango shake");
-      default: System.out.println("We wake up");
-      
-    }
+  int a = sc.nextInt();
+  int b = sc.nextInt();
+  char operator = sc.next().charAt(0);
+   
+   switch(operator){
+    case '+': System.out.print("Sum of a and b is "+(a+b));
+    break;
+    case '-': System.out.print("Sub of a and b is "+(a-b));
+    break;
+    case '*': System.out.print("Mul of a and b is "+(a*b));
+    break;
+    case '/': System.out.print("div of a and b is "+(a/b));
+    break;
+    default: System.out.println("Please Enter Valid Operator");
+   }
   }
 }
