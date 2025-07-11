@@ -454,15 +454,48 @@
 // }
 
 //do-while loop
+// import java.util.*;
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     int counter = 1;
+//     do{
+//       System.out.println("Hello world");
+//       counter++;
+//     }while(counter <= 10);
+//   }
+// }
+
+//Break statement
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     for(int i = 1; i <= 5; i++){
+//       if(i==3){
+//         break;
+//       }
+//       System.out.println(i);
+//     }
+//     System.out.println("I am out of the loop");
+//   }
+// }
+
+//Qs. Keep entering numbers till user enters a multiple of 10 
+
 import java.util.*;
 
 public class JavaBasics{
   public static void main(String args[]){
     Scanner sc = new Scanner(System.in);
-    int counter = 1;
+
     do{
-      System.out.println("Hello world");
-      counter++;
-    }while(counter <= 10);
+      System.out.print("Enter your Number: ");
+      int n = sc.nextInt();
+      if(n % 10 == 0){
+         break;
+      }
+      System.out.println(n);
+    }while(true);
   }
 }
+
