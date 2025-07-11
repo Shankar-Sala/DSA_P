@@ -368,21 +368,87 @@
 //   }
 // }
 
-// Qs. Print sum of first n natural numbers 
+// // Qs. Print sum of first n natural numbers 
+// import java.util.*;
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     System.out.print("Enter Your Number: ");
+//     int num = sc.nextInt();
+//     int sum = 0;
+//     int i=1;
+
+//     while(i<=num){
+//       sum += i;
+//       i++;
+//     }
+//     System.out.println("Sum of n natural number: "+ sum );
+//   }
+// }
+
+//For loop
+
+// import java.util.*;
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     for(int i =1; i<= 10; i++){
+//       System.out.println("Hello world");
+//     }
+//   }
+// }
+
+// import java.util.*;
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+
+//     for(int line=1; line<=4; line++){
+//       System.out.println("****");
+//     }
+//   }
+// }
+
+//print reverse of a number
+
+// import java.util.*;
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+    
+//     System.out.print("Enter Your Number: ");
+//     int n = sc.nextInt();
+    
+//     while(n > 0){
+//       int lastDigit = n % 10;
+//       System.out.print(lastDigit);
+//       n /= 10;
+//     }
+//     System.out.println();
+//   }
+// }
+
+
+// Reverse the given number 
 import java.util.*;
 
 public class JavaBasics{
   public static void main(String args[]){
     Scanner sc = new Scanner(System.in);
-    System.out.print("Enter Your Number: ");
-    int num = sc.nextInt();
-    int sum = 0;
-    int i=1;
+     
+     System.out.print("Enter your number: ");
+     int n = sc.nextInt();
+     int rev = 0;
 
-    while(i<=num){
-      sum += i;
-      i++;
-    }
-    System.out.println("Sum of n natural number: "+ sum );
+     while(n > 0){
+      int lastDigit = n % 10;
+      rev = ((rev * 10) + lastDigit);
+      n /= 10;
+     }
+     System.out.println("Reverse of given number: "+ rev);
   }
 }
