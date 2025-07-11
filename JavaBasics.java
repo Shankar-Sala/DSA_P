@@ -482,20 +482,50 @@
 
 //Qs. Keep entering numbers till user enters a multiple of 10 
 
+// import java.util.*;
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+
+//     do{
+//       System.out.print("Enter your Number: ");
+//       int n = sc.nextInt();
+//       if(n % 10 == 0){
+//          break;
+//       }
+//       System.out.println(n);
+//     }while(true);
+//   }
+// }
+
+//Continue Statement : to skip an iteration
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     for(int i =1 ; i <= 5; i++){
+//       if(i ==3){
+//         continue;
+//       }
+//       System.out.println(i);
+//     }
+//   }
+// }
+
+//Display all numbers entered by the user except multiples of 10
+
 import java.util.*;
 
 public class JavaBasics{
   public static void main(String args[]){
     Scanner sc = new Scanner(System.in);
-
     do{
-      System.out.print("Enter your Number: ");
+      System.out.print("Enter your number: ");
       int n = sc.nextInt();
       if(n % 10 == 0){
-         break;
+        continue;
       }
       System.out.println(n);
     }while(true);
   }
 }
-
