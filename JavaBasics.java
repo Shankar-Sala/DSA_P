@@ -312,26 +312,77 @@
 
 // Calculator using switch
 
+// import java.util.*;
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+
+//   int a = sc.nextInt();
+//   int b = sc.nextInt();
+//   char operator = sc.next().charAt(0);
+   
+//    switch(operator){
+//     case '+': System.out.print("Sum of a and b is "+(a+b));
+//     break;
+//     case '-': System.out.print("Sub of a and b is "+(a-b));
+//     break;
+//     case '*': System.out.print("Mul of a and b is "+(a*b));
+//     break;
+//     case '/': System.out.print("div of a and b is "+(a/b));
+//     break;
+//     default: System.out.println("Please Enter Valid Operator");
+//    }
+//   }
+// }
+
+// Chp-13: Loops (Flow Control)
+// import java.util.*;
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+// int number = 0;
+// while(number <= 100){
+//   System.out.println("Hello World");
+//   number++;
+// }
+// System.out.println("printed Hello world 100x");
+//   }
+// }
+
+//Qs. Print number from 1 to 10
+
+// import java.util.*;
+
+// public class JavaBasics{
+//   public static void main(String args[]){
+//     Scanner sc = new Scanner(System.in);
+//     System.out.print("Enter Your Number: ");
+//     int num = sc.nextInt();
+
+//     while( num <= 10){
+//       System.out.println(num);
+//       num++;
+//     }
+//     System.out.println("Sir,This is your Output");
+//   }
+// }
+
+// Qs. Print sum of first n natural numbers 
 import java.util.*;
 
 public class JavaBasics{
   public static void main(String args[]){
     Scanner sc = new Scanner(System.in);
+    System.out.print("Enter Your Number: ");
+    int num = sc.nextInt();
+    int sum = 0;
+    int i=1;
 
-  int a = sc.nextInt();
-  int b = sc.nextInt();
-  char operator = sc.next().charAt(0);
-   
-   switch(operator){
-    case '+': System.out.print("Sum of a and b is "+(a+b));
-    break;
-    case '-': System.out.print("Sub of a and b is "+(a-b));
-    break;
-    case '*': System.out.print("Mul of a and b is "+(a*b));
-    break;
-    case '/': System.out.print("div of a and b is "+(a/b));
-    break;
-    default: System.out.println("Please Enter Valid Operator");
-   }
+    while(i<=num){
+      sum += i;
+      i++;
+    }
+    System.out.println("Sum of n natural number: "+ sum );
   }
 }
